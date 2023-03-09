@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Formulario en html</title>
+	<link rel="stylesheet" type="text/css" href="Estilo.css">
+	<style type="text/css">
+table, td, th {border-collapse:collapse; padding:10px; text-align:center;}
+</style>
+</head>
+<body background="fondo.jpg" text="white" topmargin="50px" leftmargin="20px">
+	<h2 align="center">...Formularios en HTML, &LT;form&gt; ,&LT;/form&gt;</h2>
+<div align="justify">Son posiblemente la herramienta más utilizada en internet para obtener datos e información acerca de la gente 
+que navega en nuestro sitio<br><img src="form.png" hspace="10px" vspace="5px" align="right">
+<br><li>Caracteristicas de un formulario/utilidades</li>
+
+<ol type="1">
+	<li>Permite a los autores colectar información provista por los visitantes</li>
+	<li>Pueden ser utiles para recolectar información personal</li>
+	<li>Recolectan información de contacto u opiniones o cualquier tipo de entrada por parte del visitante que el autor de la página necesite</li>
+</ol>
+<table>
+<form>
+	<tr>
+	<th>Nombre:</th><th scope="col" colspan="2"><input type="text" name="nOmbre"></th>
+	</tr>
+	<tr>
+	<th>A_Paterno:</th><th scope="col" colspan="2"><input type="text" name="app"></th>
+	</tr>
+	<tr>
+	<th>A_Materno:</th><th scope="col" colspan="2"><input type="text" name="apm">
+	</th>
+</tr>
+	<tr>
+	<th>Edad:</th><th scope="col" colspan="2"><input type="text" name="e">
+	</th>
+</tr>
+	<tr>
+	<th>Email:</th><th scope="col" colspan="2"><input type="text" name="mail">
+	</th>
+</tr>
+<tr>
+	<th>Password:</th><th scope="col" colspan="2"><input type="password" name="contra"></th>
+</tr>
+<tr>
+	<th>Genero:</th><td><input type="radio" name="gen">Femenino</td> <td><input type="radio" name="gen"> Masculino</td>
+</tr>
+<tr>
+	<th>Especialidad:</th><th scope="col" colspan="2"><select name="esp" id="esp">
+		<option value="nada">~Seleccionar~</option>
+		<option value="Tecnico en programacion">Tecnico en programacion</option>
+		<option value="Tecnico en mantenimiendo industrial">Tecnico en mantenimiento industrial</option>
+		<option value="Tecnico en prendas de vestir">Tecnico en prendas de vestir</option>
+		
+	</select></th>
+</tr>
+<tr>
+	<th>Pasatiempos:</th><td><div align="left"><input type="checkbox" name="p" value="leer">Leer</div>
+	<div align="left"><input type="checkbox" name="p" value="Escuchar música">Escuchar música<br></div>
+	<div align="left"><input type="checkbox" name="p" value="Ver peliculas">Ver peliculas</div></td>
+    <td><div align="left"><input type="checkbox" name="p" value="Jugar videojuegos">Jugar videojuegos</div>
+	<div align="left"><input type="checkbox" name="p" value="Andar en bici">Andar en bici</div>
+    <div align="left"><input type="checkbox" name="p" value="Ir al gimnasio">Ir al gimnasio</div></td>
+</tr>
+    <tr>
+	<th> Comentarios:</th> <th scope="col" colspan="2"><textarea name="comentarios" rows="10" cols="40">
+	 Escriba aquí sus comentarios
+		
+	</textarea></th>
+</tr>
+<tr>
+	<th><input type="submit" name="enviar" value="Guardar"></th> <th scope="col" colspan="2"><input type="reset" name="resetear" value="Cancelar"></th></tr>
+
+</form>
+</table>
+</div>
+</body>
+</html>
